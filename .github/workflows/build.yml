@@ -3,7 +3,7 @@
 
 #taken from the mosquitto addon
 
-name: Build add-on
+name: Build add-on JCPC12
 
 env:
   BUILD_ARGS: "--test"
