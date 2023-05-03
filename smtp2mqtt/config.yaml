@@ -10,7 +10,7 @@ arch:
   - armhf
   - armv7
   - i386
-image: "bcastellucci/image-{arch}-smtp2mqtt"
+image: "jcpc12/image-{arch}-smtp2mqtt"
 startup: application
 boot: auto
 map:
