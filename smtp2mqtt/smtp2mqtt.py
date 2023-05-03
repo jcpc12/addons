@@ -101,7 +101,11 @@ class SMTP2MQTTHandler:
         payload['mime_parts'].append(mime_part)
 
         # get the attachments next
+        attachment_count = 0
         for attachment in msg.iter_attachments():
+            if attachment_count >= 2:
+                break
+            attachment_count += 1 
             _mime_part = {'best_guess': 'attachment', 'headers': {}}
             # headers (same deal as above)
             for header in attachment.items():
